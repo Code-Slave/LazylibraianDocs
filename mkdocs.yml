@@ -10,7 +10,7 @@ nav:
   - Intro: index.md
   - Install Options: install.md
   - Application Areas:
-    - Homepage: overview.md
+    - Homepage/Authors: overview.md
     - Author Detail: authors.md
     - Ebooks: ebooks.md
     - Series: series.md

@@ -12,16 +12,16 @@ Linux / Mac OS X:
 * Start in daemon mode with `python LazyLibrarian.py -daemon`
 
 ## Documentation:
-* Wiki at https://github.com/DobyTang/LazyLibrarian/wiki   
+* [Wiki](https://github.com/DobyTang/LazyLibrarian/wiki/)   
 * Online (new site goes here)
 
 ## Support/Issues
-* reddit -  https://www.reddit.com/r/LazyLibrarian/   
-* github tracker - https://github.com/DobyTang/LazyLibrarian/issues
+* [reddit](https://www.reddit.com/r/LazyLibrarian/)
+* [github tracker](https://github.com/DobyTang/LazyLibrarian/issues)
 
 ## Turorials
-Docker tutorial  http://sasquatters.com/lazylibrarian-docker/   
-Config tutorial  http://sasquatters.com/lazylibrarian-configuration/   
+[Docker](http://sasquatters.com/lazylibrarian-docker/)
+[Config](http://sasquatters.com/lazylibrarian-configuration/)
 (thanks @mccorkled)   
 
 For more options see the [Wiki](https://github.com/DobyTang/LazyLibrarian/wiki/).
@@ -32,18 +32,18 @@ Auto updates are available via interface from master for git and source installs
 ## Packages
 rpm deb and snap packages 
 
-- https://github.com/DobyTang/LazyLibrarian/releases  
+- [Releases](https://github.com/DobyTang/LazyLibrarian/releases)
   - The snap package is confined to users home directory, so all books and downloads need to be accessible from there too.
   - Install the snap package with flags --dangerous --devmode  
 - AUR package available here:
-  -  https://aur.archlinux.org/packages/lazylibrarian/  
+  - [AUR](https://aur.archlinux.org/packages/lazylibrarian/)
 - QNAP LazyLibrarian is now available for the QNAP NAS via sherpa.
-  -  https://forum.qnap.com/viewtopic.php?f=320&t=132373v
+  - [QNAP](https://forum.qnap.com/viewtopic.php?f=320&t=132373v)
 
 ## Docker packages
 - armhf version 
-  -  https://hub.docker.com/r/lsioarmhf/lazylibrarian/  
+  - [ARMHF](https://hub.docker.com/r/lsioarmhf/lazylibrarian/)
 - x64 version 
-  -  https://hub.docker.com/r/linuxserver/lazylibrarian/    
-  - with calibredb https://hub.docker.com/r/thraxis/lazylibrarian-calibre/
+  - [x64](https://hub.docker.com/r/linuxserver/lazylibrarian/)
+  - [x64 with calibredb](https://hub.docker.com/r/thraxis/lazylibrarian-calibre/)
 
