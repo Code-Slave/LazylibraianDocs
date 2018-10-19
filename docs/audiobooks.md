@@ -1,15 +1,17 @@
 
 This is the same as the eBooks page, with the same options
-<img src="/assets/screenshots/ausiobooks_main.png" width="800">
+
+<img src="/assets/screenshots/audiobooks_main.png" width="800">
 
 ##Menu
 
 The menu bar has four buttons <img src="/assets/screenshots/audiobooks_menu.png" width="400"><br> 
 
-- **[Force Search]** searches your download providers for all audiobooks marked "Wanted". You can configure a task to do this at regular intervals in config.<br>
-- **[Force Post Processing]** adds any audiobooks in your download directory to your library. You can also configure a task to do this at regular intervals in config.<br>
+- **[Search]** searches your download providers for all audiobooks marked "Wanted". You can configure a task to do this at regular intervals in config.
+- **[Run PostProcessor]** adds any audiobooks in your download directory to your library. You can also configure a task to do this at regular intervals in config.
 - **[LibraryScan]** will search your library (AudioBook Library Folder, defined in config) and add all the books it can find into your lazylibrarian database.
 - **[Recent AudioBooks]** shows a "wall" of cover images from the books in your library, most recently added first. Clicking on a cover image in the wall will open the first part of the audiobook.
+- **[RSS]** RSS feed of recent downloads.
 
 To the right of the buttons you might see a language selector <img src="/assets/screenshots/lanuguage.png" width="100"> This only appears if there are results in more than one language. Note that this is goodreads/googlebooks idea of the books language, not the actual language of any audio files.
 
