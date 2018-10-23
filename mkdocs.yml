@@ -21,7 +21,7 @@ nav:
     - History: history.md
     - Logs: logs.md
   - Configuration/Settings: 
-    - Menus: config_menu.md
+    - Menus: config_menus.md
     - Interface: config_interface.md
     - Importing: config_importing.md
     - Downloaders: config_downloaders.md
@@ -32,7 +32,7 @@ nav:
     - Filters: config_filters.md
   - FAQ: faq.md
   - API: api.md
-  - User Accounts: user_accounts.md
+  - User Accounts: config_users.md
     
 repo_name: 'Code-Slave/LazylibrarianDocs'
 repo_url: 'https://github.com/Code-Slave/LazylibrarianDocs'

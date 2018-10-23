@@ -1,11 +1,15 @@
-## Book Search API
-Currently only supports GoodReads and GoogleBooks
+#Importing
+<img src="/assets/screenshots/config_importing.png" width="800">
+
+
+## Information Sources
+Currently only supports GoodReads, GoogleBooks and LibraryThing
 ### GoodReads API
 Access key for GoodReads
 
 ### GoodReads Sync
 LazyLibrarian is supplied with a default goodreads api key which is read-only, and gives access to search functions.    
-If you want to sync your goodreads bookshelves with lazylibrarian you will need to get your own key and secret from https://www.goodreads.com/api/keys. Once you have your own key/secret enter them in lazylibrarian config and save the config. You can then obtain your goodreads oAuth token/secret to get write access to your goodreads account.  
+If you want to sync your goodreads bookshelves with lazylibrarian you will need to get your own key and secret from [GoodreadsApi](https://www.goodreads.com/api/keys). Once you have your own key/secret enter them in lazylibrarian config and save the config. You can then obtain your goodreads oAuth token/secret to get write access to your goodreads account.  
 You can select whether a book is allowed to be on both shelves. If using the default goodreads to-read/read shelves goodreads will override this and only allow the book on one shelf (you've either read it or you haven't) If using your own shelves they can be used as owned/read instead if you wish, so a book can be on both shelves.  
 Press "Request oAuth1". A new goodreads window will open where you can confirm you want to give access to lazylibrarian. Once confirmed, press "Request oAuth2" to read and store the credentials in lazylibrarian config.  
 You can now configure the bookshelves to use. You can use existing goodreads shelves or lazylibrarian can create new ones. Lazylibrarian supports two shelves, one for books you want, and another for books you have. You can also define how often the sync should occur.  The "Test Authorisation" button will check your credentials are entered correctly.
