@@ -5,9 +5,9 @@ Most of these are pretty selfexplanatory.
 
 <img src="/assets/screenshots/config_menus.png" width="800">
 
-- **[Shutdown]** Shuts The system Down
-- **[Restart]** Restarts LazyLibrarian
-- **[System Info]** Gives some version and system info. Helpful for debugging.
+* **[Shutdown]** Shuts The system Down
+* **[Restart]** Restarts LazyLibrarian
+* **[System Info]** Gives some version and system info. Helpful for debugging.
 
 ```
 Startup cmd: ['/usr/bin/python', '/app/lazylibrarian/LazyLibrarian.py', '--datadir', '/config', '--nolaunch']
@@ -43,9 +43,9 @@ cryptography: 2.3.1
 magic: missing
 ```
 
-- **[Job Status]** Shows status of all jobs. Has Obtions to stop current running jobs and restart jobs
+* **[Job Status]** Shows status of all jobs. Has Obtions to stop current running jobs and restart jobs
 
 <img src="/assets/screenshots/job_status.png" width="800"> 
 
-- **[Check Version]** Check to be sure LazyLibrarian is running latest version. if not it asks if you want to upgrade.
-- **[UserAdmin](config_users.md)**
+* **[Check Version]** Check to be sure LazyLibrarian is running latest version. if not it asks if you want to upgrade.
+* **[UserAdmin](config_users.md)**

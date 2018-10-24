@@ -87,5 +87,5 @@ Note that each language is listed twice, once with full month name and again wit
 
 ## Date Formats
 
-- ***Added Dates -*** Format for Added Columns Dates when we added a book/magazine to the library
-- ***Issue Dates -*** Format for Issue Date How to display magazine issue dates. Dates are stored internally in a format useful for sorting, but for display you might want to show something more readable. 
+* ***Added Dates -*** Format for Added Columns Dates when we added a book/magazine to the library
+* ***Issue Dates -*** Format for Issue Date How to display magazine issue dates. Dates are stored internally in a format useful for sorting, but for display you might want to show something more readable. 

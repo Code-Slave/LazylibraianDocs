@@ -4,14 +4,14 @@ There are no buttons in the menu bar, just a searchbox described earlier.
 
 On the left is <img src="/assets/screenshots/series_status.png" width="200"> to select the status of series to show in the table.
 
-- **[All]** show all series
-- **[Complete]** Show series that all books have been downloaded.
-- **[Partial]** Series only partially full.
-- **[Empty]** Series with no books in them.
-- **[Skip]** Series marked to skip
-- **[Wanted]** Series marked as wanted
-- **[Active]** Series active in the database
-- **[Ignored]** Series marked as ingnored in database
+* **[All]** show all series
+* **[Complete]** Show series that all books have been downloaded.
+* **[Partial]** Series only partially full.
+* **[Empty]** Series with no books in them.
+* **[Skip]** Series marked to skip
+* **[Wanted]** Series marked as wanted
+* **[Active]** Series active in the database
+* **[Ignored]** Series marked as ingnored in database
 
  Toggles, row selector and result filter are the same as on previous pages.
  Use the tickboxes on the left column to select which series to change status for, and at the bottom of the page is another selector to set the new status <img src="/assets/screenshots/series_status.png" width="200">

@@ -26,12 +26,12 @@ In the author details above the table there is a photo, the author name, and an 
 
 **[Mark Selected as]**
 
-- **[Wanted]** Mark selected book(s) as wanted and LazyLibrarian will search for them
-- **[Have]** Mark book(s) selected as have and LazyLibrarian will **NOT** search.
-- **[Ignored]** Ignore book(s) from searches and hide from main window.
-- **[Skip]** Skip searching for selected book(s).
-- **[Removed]** remove book(s) from LazyLibrarian database. Does not delete local files.For books, if the author is active, this is changed to Ignored 
-- **[Delete]** delete book(s) from database and deletes local files as well.
-- **[Unread]** Mark book(s) as unread in the database
-- **[Read]** mark book(s) as read in the database and show a bookmark
-- **[ToRead]** Mark book(s) as to be read and show a bookmark
+* **[Wanted]** Mark selected book(s) as wanted and LazyLibrarian will search for them
+* **[Have]** Mark book(s) selected as have and LazyLibrarian will **NOT** search.
+* **[Ignored]** Ignore book(s) from searches and hide from main window.
+* **[Skip]** Skip searching for selected book(s).
+* **[Removed]** remove book(s) from LazyLibrarian database. Does not delete local files.For books, if the author is active, this is changed to Ignored 
+* **[Delete]** delete book(s) from database and deletes local files as well.
+* **[Unread]** Mark book(s) as unread in the database
+* **[Read]** mark book(s) as read in the database and show a bookmark
+* **[ToRead]** Mark book(s) as to be read and show a bookmark
