@@ -1,0 +1,46 @@
+site_name: LazyLibDocs
+theme:
+  name: 'material'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  logo:
+    icon: 'book'
+nav:
+  - Intro: index.md
+  - Install Options: install.md
+  - Application Areas:
+    - Homepage/Authors: overview.md
+    - Author Detail: authors.md
+    - Ebooks: ebooks.md
+    - Series: series.md
+    - Series Detail: series_detail.md
+    - AudioBooks: audiobooks.md
+    - Magazines: magazines.md
+    - Magazine Detail: magazine_detail.md
+    - Manage: manage.md
+    - History: history.md
+    - Logs: logs.md
+  - Configuration/Settings: 
+    - Menus: config_menus.md
+    - Interface: config_interface.md
+    - Importing: config_importing.md
+    - Downloaders: config_downloaders.md
+    - Providers: config_providers.md
+    - Processing: config_processing.md
+    - Notifications: config_notifications.md
+    - Categories: config_categories.md
+    - Filters: config_filters.md
+    - Command Line: config_commandline.md
+  - FAQ: faq.md
+  - API: api.md
+  - User Accounts: config_users.md
+    
+repo_name: 'Code-Slave/LazylibrarianDocs'
+repo_url: 'https://github.com/Code-Slave/LazylibrarianDocs'
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
