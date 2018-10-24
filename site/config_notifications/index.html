@@ -1,0 +1,903 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Notifications - LazyLibDocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../#enable-twitter-notifications" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="LazyLibDocs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">book</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                LazyLibDocs
+              </span>
+              <span class="md-header-nav__topic">
+                Notifications
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/Code-Slave/LazylibrarianDocs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Code-Slave/LazylibrarianDocs
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="LazyLibDocs" class="md-nav__button md-logo">
+      
+        <i class="md-icon">book</i>
+      
+    </a>
+    LazyLibDocs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/Code-Slave/LazylibrarianDocs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Code-Slave/LazylibrarianDocs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../install/" title="Install Options" class="md-nav__link">
+      Install Options
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Application Areas
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Application Areas
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../overview/" title="Homepage/Authors" class="md-nav__link">
+      Homepage/Authors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../authors/" title="Author Detail" class="md-nav__link">
+      Author Detail
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ebooks/" title="Ebooks" class="md-nav__link">
+      Ebooks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../series/" title="Series" class="md-nav__link">
+      Series
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../series_detail/" title="Series Detail" class="md-nav__link">
+      Series Detail
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../audiobooks/" title="AudioBooks" class="md-nav__link">
+      AudioBooks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../magazines/" title="Magazines" class="md-nav__link">
+      Magazines
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../manage/" title="Manage" class="md-nav__link">
+      Manage
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../history/" title="History" class="md-nav__link">
+      History
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../logs/" title="Logs" class="md-nav__link">
+      Logs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Configuration/Settings
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Configuration/Settings
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_menus/" title="Menus" class="md-nav__link">
+      Menus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_interface/" title="Interface" class="md-nav__link">
+      Interface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_importing/" title="Importing" class="md-nav__link">
+      Importing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_downloaders/" title="Downloaders" class="md-nav__link">
+      Downloaders
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_providers/" title="Providers" class="md-nav__link">
+      Providers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_processing/" title="Processing" class="md-nav__link">
+      Processing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Notifications
+      </label>
+    
+    <a href="./" title="Notifications" class="md-nav__link md-nav__link--active">
+      Notifications
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#enable-twitter-notifications" title="Enable Twitter Notifications" class="md-nav__link">
+    Enable Twitter Notifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-boxcar-notifications" title="Enable Boxcar Notifications" class="md-nav__link">
+    Enable Boxcar Notifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-pushbullet-notifications" title="Enable Pushbullet Notifications" class="md-nav__link">
+    Enable Pushbullet Notifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-pushover-notifications" title="Enable Pushover Notifications" class="md-nav__link">
+    Enable Pushover Notifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-androidpn" title="Enable AndroidPN" class="md-nav__link">
+    Enable AndroidPN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-notifymyandroid" title="Enable NotifyMyAndroid" class="md-nav__link">
+    Enable NotifyMyAndroid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-email-notification" title="Enable Email Notification" class="md-nav__link">
+    Enable Email Notification
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-custom-notification" title="Enable Custom Notification" class="md-nav__link">
+    Enable Custom Notification
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_categories/" title="Categories" class="md-nav__link">
+      Categories
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_filters/" title="Filters" class="md-nav__link">
+      Filters
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../faq.md" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../api/" title="API" class="md-nav__link">
+      API
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user_accounts.md" title="User Accounts" class="md-nav__link">
+      User Accounts
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#enable-twitter-notifications" title="Enable Twitter Notifications" class="md-nav__link">
+    Enable Twitter Notifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-boxcar-notifications" title="Enable Boxcar Notifications" class="md-nav__link">
+    Enable Boxcar Notifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-pushbullet-notifications" title="Enable Pushbullet Notifications" class="md-nav__link">
+    Enable Pushbullet Notifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-pushover-notifications" title="Enable Pushover Notifications" class="md-nav__link">
+    Enable Pushover Notifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-androidpn" title="Enable AndroidPN" class="md-nav__link">
+    Enable AndroidPN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-notifymyandroid" title="Enable NotifyMyAndroid" class="md-nav__link">
+    Enable NotifyMyAndroid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-email-notification" title="Enable Email Notification" class="md-nav__link">
+    Enable Email Notification
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-custom-notification" title="Enable Custom Notification" class="md-nav__link">
+    Enable Custom Notification
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/Code-Slave/LazylibrarianDocs/edit/master/docs/config_notifications.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Notifications</h1>
+                
+                <p>For all the notifiers, Notify on Snatch sends a message whenever a book/magazine is sent to one of the
+downloaders. Notify on Download sends a message when a snatched book/magazine has been successfully
+downloaded and added to the library. Some notifiers have the ability to send a test message to check the notifications work. For notifiers that can send to multiple devices, the test message will return a list of valid device IDs.</p>
+<h2 id="enable-twitter-notifications">Enable Twitter Notifications<a class="headerlink" href="#enable-twitter-notifications" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Notify on Snatch</li>
+<li>Notify on Download</li>
+<li>Request Authorisation</li>
+<li>Twitter Key</li>
+<li>Verify Key</li>
+<li>Test Twitter</li>
+</ul>
+<h2 id="enable-boxcar-notifications">Enable Boxcar Notifications<a class="headerlink" href="#enable-boxcar-notifications" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Notify on Snatch</li>
+<li>Notify on Download</li>
+<li>Boxcar Token</li>
+</ul>
+<h2 id="enable-pushbullet-notifications">Enable Pushbullet Notifications<a class="headerlink" href="#enable-pushbullet-notifications" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Notify on Snatch</li>
+<li>Notify on Download</li>
+<li>Pushbullet API</li>
+<li>Device ID</li>
+<li>Test Pushbullet</li>
+</ul>
+<h2 id="enable-pushover-notifications">Enable Pushover Notifications<a class="headerlink" href="#enable-pushover-notifications" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Notify on Snatch</li>
+<li>Notify on Download</li>
+<li>Pushover API</li>
+<li>Keys</li>
+<li>Device</li>
+<li>Priority</li>
+<li>Test Pushover</li>
+</ul>
+<h2 id="enable-androidpn">Enable AndroidPN<a class="headerlink" href="#enable-androidpn" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Notify on Snatch</li>
+<li>Notify on Download</li>
+<li>Broadcast</li>
+<li>AndroidPN Notification URL</li>
+<li>Username</li>
+<li>Test AndroidPN</li>
+</ul>
+<h2 id="enable-notifymyandroid">Enable NotifyMyAndroid<a class="headerlink" href="#enable-notifymyandroid" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Notify on Snatch</li>
+<li>Notify on Download</li>
+<li>API key</li>
+<li>Priority</li>
+<li>Test NMA</li>
+</ul>
+<h2 id="enable-email-notification">Enable Email Notification<a class="headerlink" href="#enable-email-notification" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Notify on Snatch</li>
+<li>Notify on Download</li>
+<li>Email From address</li>
+<li>Email To address</li>
+<li>SMTP Server address</li>
+<li>SMTP user and password</li>
+<li>SMTP port</li>
+<li>Use SSL</li>
+<li>Use TLS</li>
+<li>Test Email</li>
+</ul>
+<h2 id="enable-custom-notification">Enable Custom Notification<a class="headerlink" href="#enable-custom-notification" title="Permanent link">&para;</a></h2>
+<p>This is a special notifier, which is a script to run. There are some example scripts with lazylibrarian. You can use it, for example, to notify a system we don't support yet. There is an example script in python and another in bash that shows how the notifiers work. There is also example_ebook_convert.py that can be used as a notifier to make sure you have a copy of both mobi and epub for all new downloads. It uses calibre ebook-convert to create one format from another. Use it as a base for your own notifiers. The notifiers are passed a list of database columns for a book or magazine, and details of the download source. See the examples for full details.</p>
+<p>If you create any other notifiers that you think might be useful to others, please upload them!</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../config_processing/" title="Processing" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Processing
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../config_categories/" title="Categories" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Categories
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

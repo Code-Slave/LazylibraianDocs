@@ -1,0 +1,1265 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Interface - LazyLibDocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../#server-details" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="LazyLibDocs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">book</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                LazyLibDocs
+              </span>
+              <span class="md-header-nav__topic">
+                Interface
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/Code-Slave/LazylibrarianDocs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Code-Slave/LazylibrarianDocs
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="LazyLibDocs" class="md-nav__button md-logo">
+      
+        <i class="md-icon">book</i>
+      
+    </a>
+    LazyLibDocs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/Code-Slave/LazylibrarianDocs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Code-Slave/LazylibrarianDocs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../install/" title="Install Options" class="md-nav__link">
+      Install Options
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Application Areas
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Application Areas
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../overview/" title="Homepage/Authors" class="md-nav__link">
+      Homepage/Authors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../authors/" title="Author Detail" class="md-nav__link">
+      Author Detail
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ebooks/" title="Ebooks" class="md-nav__link">
+      Ebooks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../series/" title="Series" class="md-nav__link">
+      Series
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../series_detail/" title="Series Detail" class="md-nav__link">
+      Series Detail
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../audiobooks/" title="AudioBooks" class="md-nav__link">
+      AudioBooks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../magazines/" title="Magazines" class="md-nav__link">
+      Magazines
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../manage/" title="Manage" class="md-nav__link">
+      Manage
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../history/" title="History" class="md-nav__link">
+      History
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../logs/" title="Logs" class="md-nav__link">
+      Logs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Configuration/Settings
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Configuration/Settings
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_menus/" title="Menus" class="md-nav__link">
+      Menus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Interface
+      </label>
+    
+    <a href="./" title="Interface" class="md-nav__link md-nav__link--active">
+      Interface
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#server-details" title="Server Details" class="md-nav__link">
+    Server Details
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hostname" title="Hostname" class="md-nav__link">
+    Hostname
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#port" title="Port" class="md-nav__link">
+    Port
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-root" title="Web Root" class="md-nav__link">
+    Web Root
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-http-proxy" title="Enable http proxy" class="md-nav__link">
+    Enable http proxy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-https-access-to-lazylibrarian" title="Enable https access to lazylibrarian" class="md-nav__link">
+    Enable https access to lazylibrarian
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-dir" title="Log Dir" class="md-nav__link">
+    Log Dir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-limit" title="Log Limit" class="md-nav__link">
+    Log Limit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-files" title="Log Files" class="md-nav__link">
+    Log Files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-size" title="Log Size" class="md-nav__link">
+    Log Size
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-level" title="Log Level" class="md-nav__link">
+    Log Level
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proxy-details" title="Proxy Details" class="md-nav__link">
+    Proxy Details
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proxy-host" title="Proxy Host" class="md-nav__link">
+    Proxy Host
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxy-type" title="Proxy Type" class="md-nav__link">
+    Proxy Type
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#access-control" title="Access Control" class="md-nav__link">
+    Access Control
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable-user-accounts" title="Enable user accounts" class="md-nav__link">
+    Enable user accounts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#single-user-bypass-login" title="Single user bypass login" class="md-nav__link">
+    Single user bypass login
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-name" title="User Name" class="md-nav__link">
+    User Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#password" title="Password" class="md-nav__link">
+    Password
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contact-email-for-administrator" title="Contact email for administrator" class="md-nav__link">
+    Contact email for administrator
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#startup" title="Startup" class="md-nav__link">
+    Startup
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#launch-browser" title="Launch Browser" class="md-nav__link">
+    Launch Browser
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-api" title="Enable API" class="md-nav__link">
+    Enable API
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appearance" title="Appearance" class="md-nav__link">
+    Appearance
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interface" title="Interface" class="md-nav__link">
+    Interface
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theme" title="Theme" class="md-nav__link">
+    Theme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-info-button" title="System Info button" class="md-nav__link">
+    System Info button
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-version" title="Check Version" class="md-nav__link">
+    Check Version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-admin" title="User Admin" class="md-nav__link">
+    User Admin
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_importing/" title="Importing" class="md-nav__link">
+      Importing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_downloaders/" title="Downloaders" class="md-nav__link">
+      Downloaders
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_providers/" title="Providers" class="md-nav__link">
+      Providers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_processing/" title="Processing" class="md-nav__link">
+      Processing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_notifications/" title="Notifications" class="md-nav__link">
+      Notifications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_categories/" title="Categories" class="md-nav__link">
+      Categories
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_filters/" title="Filters" class="md-nav__link">
+      Filters
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../faq.md" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../api/" title="API" class="md-nav__link">
+      API
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user_accounts.md" title="User Accounts" class="md-nav__link">
+      User Accounts
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#server-details" title="Server Details" class="md-nav__link">
+    Server Details
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hostname" title="Hostname" class="md-nav__link">
+    Hostname
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#port" title="Port" class="md-nav__link">
+    Port
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-root" title="Web Root" class="md-nav__link">
+    Web Root
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-http-proxy" title="Enable http proxy" class="md-nav__link">
+    Enable http proxy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-https-access-to-lazylibrarian" title="Enable https access to lazylibrarian" class="md-nav__link">
+    Enable https access to lazylibrarian
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-dir" title="Log Dir" class="md-nav__link">
+    Log Dir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-limit" title="Log Limit" class="md-nav__link">
+    Log Limit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-files" title="Log Files" class="md-nav__link">
+    Log Files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-size" title="Log Size" class="md-nav__link">
+    Log Size
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log-level" title="Log Level" class="md-nav__link">
+    Log Level
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proxy-details" title="Proxy Details" class="md-nav__link">
+    Proxy Details
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proxy-host" title="Proxy Host" class="md-nav__link">
+    Proxy Host
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxy-type" title="Proxy Type" class="md-nav__link">
+    Proxy Type
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#access-control" title="Access Control" class="md-nav__link">
+    Access Control
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable-user-accounts" title="Enable user accounts" class="md-nav__link">
+    Enable user accounts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#single-user-bypass-login" title="Single user bypass login" class="md-nav__link">
+    Single user bypass login
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-name" title="User Name" class="md-nav__link">
+    User Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#password" title="Password" class="md-nav__link">
+    Password
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contact-email-for-administrator" title="Contact email for administrator" class="md-nav__link">
+    Contact email for administrator
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#startup" title="Startup" class="md-nav__link">
+    Startup
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#launch-browser" title="Launch Browser" class="md-nav__link">
+    Launch Browser
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-api" title="Enable API" class="md-nav__link">
+    Enable API
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appearance" title="Appearance" class="md-nav__link">
+    Appearance
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interface" title="Interface" class="md-nav__link">
+    Interface
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#theme" title="Theme" class="md-nav__link">
+    Theme
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-info-button" title="System Info button" class="md-nav__link">
+    System Info button
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-version" title="Check Version" class="md-nav__link">
+    Check Version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-admin" title="User Admin" class="md-nav__link">
+    User Admin
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/Code-Slave/LazylibrarianDocs/edit/master/docs/config_interface.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Interface</h1>
+                
+                <h2 id="server-details">Server Details<a class="headerlink" href="#server-details" title="Permanent link">&para;</a></h2>
+<h3 id="hostname">Hostname<a class="headerlink" href="#hostname" title="Permanent link">&para;</a></h3>
+<p>Address of the machine LazyLibrarian is running on. Default 0.0.0.0<br />
+You probably don't need to change this.</p>
+<h3 id="port">Port<a class="headerlink" href="#port" title="Permanent link">&para;</a></h3>
+<p>Port to point your browser at for the web interface. Default 5299
+eg localhost:5299</p>
+<h3 id="web-root">Web Root<a class="headerlink" href="#web-root" title="Permanent link">&para;</a></h3>
+<p>Prefix for web. usually used with a proxy frontend
+eg /lazylib so you would hit ip:port/lazylib</p>
+<h3 id="enable-http-proxy">Enable http proxy<a class="headerlink" href="#enable-http-proxy" title="Permanent link">&para;</a></h3>
+<p>Set cherrypy tools.proxy.on True 
+Note this is usually not needed for nginx, or for transparent proxying, and can cause redirects to 127.0.0.1 if set unnecessarily. If it is set, and you are NOT using apache2, you will need to set PROXY_LOCAL in your config.ini to reflect the header in use. This config option is not available in the web interface.</p>
+<h3 id="enable-https-access-to-lazylibrarian">Enable https access to lazylibrarian<a class="headerlink" href="#enable-https-access-to-lazylibrarian" title="Permanent link">&para;</a></h3>
+<p>Allow login only over https</p>
+<h3 id="log-dir">Log Dir<a class="headerlink" href="#log-dir" title="Permanent link">&para;</a></h3>
+<p>Where to store log files. We create a rolling log of 10 files, each around 200K
+The number of log files and maximum size are configurable in the config.ini file
+but not on the web interface.
+Older log entries are deleted as necessary to stay in these limits.</p>
+<h3 id="log-limit">Log Limit<a class="headerlink" href="#log-limit" title="Permanent link">&para;</a></h3>
+<p>This is how many lines of log to keep in memory for the on-screen display.
+Larger screen logs use more memory and are slower to display.</p>
+<h3 id="log-files">Log Files<a class="headerlink" href="#log-files" title="Permanent link">&para;</a></h3>
+<p>This is how many files to rotate.</p>
+<h3 id="log-size">Log Size<a class="headerlink" href="#log-size" title="Permanent link">&para;</a></h3>
+<p>This is maximum size of each file.</p>
+<h3 id="log-level">Log Level<a class="headerlink" href="#log-level" title="Permanent link">&para;</a></h3>
+<p>0=Quiet, 1=Normal, 2=Debug
+Values larger than 2 are currently undefined and may change in later versions.
+They are used for detailed debugging and produce a lot of output</p>
+<h2 id="proxy-details">Proxy Details<a class="headerlink" href="#proxy-details" title="Permanent link">&para;</a></h2>
+<p>If you are behind a proxy, set these values as appropriate</p>
+<h3 id="proxy-host">Proxy Host<a class="headerlink" href="#proxy-host" title="Permanent link">&para;</a></h3>
+<h3 id="proxy-type">Proxy Type<a class="headerlink" href="#proxy-type" title="Permanent link">&para;</a></h3>
+<h2 id="access-control">Access Control<a class="headerlink" href="#access-control" title="Permanent link">&para;</a></h2>
+<h3 id="enable-user-accounts">Enable user accounts<a class="headerlink" href="#enable-user-accounts" title="Permanent link">&para;</a></h3>
+<p>Switch on user accounts so each user can have different access rights, and also save their own read/to-read bookmarks, specify their preferred book type etc. See separate wiki page.</p>
+<h3 id="single-user-bypass-login">Single user bypass login<a class="headerlink" href="#single-user-bypass-login" title="Permanent link">&para;</a></h3>
+<p>If you have user accounts enabled, but are the only user on your system, this will log you in automatically. Useful if you need user accounts for bookmarks</p>
+<p>If user accounts are NOT enabled...<br />
+User name and password for logging into the web interface</p>
+<h3 id="user-name">User Name<a class="headerlink" href="#user-name" title="Permanent link">&para;</a></h3>
+<h3 id="password">Password<a class="headerlink" href="#password" title="Permanent link">&para;</a></h3>
+<p>If user accounts ARE enabled...</p>
+<h3 id="contact-email-for-administrator">Contact email for administrator<a class="headerlink" href="#contact-email-for-administrator" title="Permanent link">&para;</a></h3>
+<p>This is the email your users will use to contact you for lost passwords, requests etc.</p>
+<h2 id="startup">Startup<a class="headerlink" href="#startup" title="Permanent link">&para;</a></h2>
+<h3 id="launch-browser">Launch Browser<a class="headerlink" href="#launch-browser" title="Permanent link">&para;</a></h3>
+<p>If ticked, launch a browser (or a new tab in a running browser) when LazyLibrarian starts up.
+Leave unticked if running LazyLibrarian on a headless server or if you don't want to log in at startup.</p>
+<h3 id="enable-api">Enable API<a class="headerlink" href="#enable-api" title="Permanent link">&para;</a></h3>
+<p>If ticked, allow api access to LazyLibrarian, see wiki api page for details.<br />
+Current api is displayed, or you can generate a new api key or edit the generated one.</p>
+<h2 id="appearance">Appearance<a class="headerlink" href="#appearance" title="Permanent link">&para;</a></h2>
+<p>A selection of display features can be turned on and off, disable the parts you don't need for a cleaner interface
+<em> Show Author Images
+</em> Show Book Images
+<em> Show Magazine Images
+</em> Show Series
+<em> Show Magazines
+</em> Show AudioBooks
+<em> Show column toggles
+</em> Show titles ignoring definite article (The, A)
+* Show author surname first</p>
+<h3 id="interface">Interface<a class="headerlink" href="#interface" title="Permanent link">&para;</a></h3>
+<p>Currently LazyLibrarian ships with it's old default interface (now called "legacy") and a much more modern bookstrap interface which works better with smaller screens than the default. 
+It has many different themes available, the bookstrap theme selector is not visible in the default theme.
+Several newer features are ONLY available in the bookstrap interface, as some libraries used in the default interface are too old. Development work and new features are likely to be bookstrap only.</p>
+<h3 id="theme">Theme<a class="headerlink" href="#theme" title="Permanent link">&para;</a></h3>
+<p>Choose the active theme here. Legacy or Bookstrap. Bookstrap is recommended.</p>
+<h3 id="system-info-button">System Info button<a class="headerlink" href="#system-info-button" title="Permanent link">&para;</a></h3>
+<p>Show basic details about the system lazylibrarian is running on, including some software version information. This info can be very useful when tracing bugs and is included by default in the lazylibrarian debug logs.</p>
+<h3 id="check-version">Check Version<a class="headerlink" href="#check-version" title="Permanent link">&para;</a></h3>
+<p>We automatically check LazyLibrarian is up to date every time you start it, and also check every few days as set by the Version Check Interval in your config file. This button will confirm if you are up to date, or show a list of recent commits if you are not running the current version. </p>
+<h3 id="user-admin">User Admin<a class="headerlink" href="#user-admin" title="Permanent link">&para;</a></h3>
+<p>This button is only visible if user accounts are enabled and takes you to a page where the admin can manage user accounts</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../config_menus/" title="Menus" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Menus
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../config_importing/" title="Importing" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Importing
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

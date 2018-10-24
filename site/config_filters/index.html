@@ -1,0 +1,921 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Filters - LazyLibDocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../#book-reject-list" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="LazyLibDocs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">book</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                LazyLibDocs
+              </span>
+              <span class="md-header-nav__topic">
+                Filters
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/Code-Slave/LazylibrarianDocs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Code-Slave/LazylibrarianDocs
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="LazyLibDocs" class="md-nav__button md-logo">
+      
+        <i class="md-icon">book</i>
+      
+    </a>
+    LazyLibDocs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/Code-Slave/LazylibrarianDocs/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Code-Slave/LazylibrarianDocs
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../install/" title="Install Options" class="md-nav__link">
+      Install Options
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Application Areas
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Application Areas
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../overview/" title="Homepage/Authors" class="md-nav__link">
+      Homepage/Authors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../authors/" title="Author Detail" class="md-nav__link">
+      Author Detail
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ebooks/" title="Ebooks" class="md-nav__link">
+      Ebooks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../series/" title="Series" class="md-nav__link">
+      Series
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../series_detail/" title="Series Detail" class="md-nav__link">
+      Series Detail
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../audiobooks/" title="AudioBooks" class="md-nav__link">
+      AudioBooks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../magazines/" title="Magazines" class="md-nav__link">
+      Magazines
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../manage/" title="Manage" class="md-nav__link">
+      Manage
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../history/" title="History" class="md-nav__link">
+      History
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../logs/" title="Logs" class="md-nav__link">
+      Logs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Configuration/Settings
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Configuration/Settings
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_menus/" title="Menus" class="md-nav__link">
+      Menus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_interface/" title="Interface" class="md-nav__link">
+      Interface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_importing/" title="Importing" class="md-nav__link">
+      Importing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_downloaders/" title="Downloaders" class="md-nav__link">
+      Downloaders
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_providers/" title="Providers" class="md-nav__link">
+      Providers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_processing/" title="Processing" class="md-nav__link">
+      Processing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_notifications/" title="Notifications" class="md-nav__link">
+      Notifications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../config_categories/" title="Categories" class="md-nav__link">
+      Categories
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Filters
+      </label>
+    
+    <a href="./" title="Filters" class="md-nav__link md-nav__link--active">
+      Filters
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#book-reject-list" title="Book Reject List" class="md-nav__link">
+    Book Reject List
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#magazine-reject-list" title="Magazine Reject List" class="md-nav__link">
+    Magazine Reject List
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audiobook-reject-list" title="AudioBook Reject List" class="md-nav__link">
+    AudioBook Reject List
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extension-reject-list-all-types" title="Extension Reject List (all types)" class="md-nav__link">
+    Extension Reject List (all types)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#size-limits" title="Size Limits" class="md-nav__link">
+    Size Limits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#magazine-reject-lists-per-title" title="Magazine Reject Lists (per title)" class="md-nav__link">
+    Magazine Reject Lists (per title)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reject-words" title="Reject Words" class="md-nav__link">
+    Reject Words
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-expression" title="Search Expression" class="md-nav__link">
+    Search Expression
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date-style" title="Date Style" class="md-nav__link">
+    Date Style
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-and-export-filter-buttons" title="Import and Export filter buttons" class="md-nav__link">
+    Import and Export filter buttons
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../faq.md" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../api/" title="API" class="md-nav__link">
+      API
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user_accounts.md" title="User Accounts" class="md-nav__link">
+      User Accounts
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#book-reject-list" title="Book Reject List" class="md-nav__link">
+    Book Reject List
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#magazine-reject-list" title="Magazine Reject List" class="md-nav__link">
+    Magazine Reject List
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audiobook-reject-list" title="AudioBook Reject List" class="md-nav__link">
+    AudioBook Reject List
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extension-reject-list-all-types" title="Extension Reject List (all types)" class="md-nav__link">
+    Extension Reject List (all types)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#size-limits" title="Size Limits" class="md-nav__link">
+    Size Limits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#magazine-reject-lists-per-title" title="Magazine Reject Lists (per title)" class="md-nav__link">
+    Magazine Reject Lists (per title)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reject-words" title="Reject Words" class="md-nav__link">
+    Reject Words
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-expression" title="Search Expression" class="md-nav__link">
+    Search Expression
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date-style" title="Date Style" class="md-nav__link">
+    Date Style
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-and-export-filter-buttons" title="Import and Export filter buttons" class="md-nav__link">
+    Import and Export filter buttons
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/Code-Slave/LazylibrarianDocs/edit/master/docs/config_filters.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Filters</h1>
+                
+                <h2 id="book-reject-list">Book Reject List<a class="headerlink" href="#book-reject-list" title="Permanent link">&para;</a></h2>
+<p>Comma separated list of words to reject:
+Search results with any of these words in the title will be ignored
+Default: audiobook, mp3
+When the downloaders return a list of results, you can filter out ones you don't want using this list. Works by looking for rejected words in the titles returned by the downloaders. Will not reject words that are in the title you asked for, or in the authors name. </p>
+<h2 id="magazine-reject-list">Magazine Reject List<a class="headerlink" href="#magazine-reject-list" title="Permanent link">&para;</a></h2>
+<p>Global setting, similar to book reject list, applies to all magazines</p>
+<h2 id="audiobook-reject-list">AudioBook Reject List<a class="headerlink" href="#audiobook-reject-list" title="Permanent link">&para;</a></h2>
+<p>as above</p>
+<h2 id="extension-reject-list-all-types">Extension Reject List (all types)<a class="headerlink" href="#extension-reject-list-all-types" title="Permanent link">&para;</a></h2>
+<p>Results with any of these extensions anywhere in the contents will be rejected. Useful to stop badly named video files being grabbed when you want the book. We scan the list of files in the torrent
+(only transmission/deluge/qbittorrent) and reject the whole download if it contains a file with a matching extension. Can't do this for usenet, as there doesn't seem to be a nzb contents list?</p>
+<h2 id="size-limits">Size Limits<a class="headerlink" href="#size-limits" title="Permanent link">&para;</a></h2>
+<p>You can restrict downloads by minimum/maximum size (where available). Ebooks are generally way smaller than audiobooks, which helps limit grabbing the wrong type.</p>
+<h2 id="magazine-reject-lists-per-title">Magazine Reject Lists (per title)<a class="headerlink" href="#magazine-reject-lists-per-title" title="Permanent link">&para;</a></h2>
+<h3 id="reject-words">Reject Words<a class="headerlink" href="#reject-words" title="Permanent link">&para;</a></h3>
+<p>Each magazine has it's own reject list. Useful where magazine titles are subsets of another title, or where there are international variants of a magazine. Default is blank as most magazines don't need any filtering, just the name. <br />
+Example 1:<br />
+You want to download "Edge" The downloaders return...<br />
+Edge TruePDF-July 2016<br />
+Pacific Edge-April June 2016<br />
+Living Edge TruePDF-May 2016<br />
+In the reject list for Edge you would put Pacific, Living  to prevent these being grabbed<br />
+Example 2:<br />
+You want to download GQ  The downloaders return...<br />
+GQ May 2016<br />
+GQ India May 2016<br />
+GQ USA May 2016<br />
+British GQ May 2016<br />
+In the reject list you would put India, USA, British  </p>
+<p>If you want to download GQ India, or GQ USA, just put that as the title, no reject list needed.  </p>
+<p>If you know in advance which words you want to reject, you can pass them as part of the magazine name when you first add it on the "Magazines" page.  Separate title and reject list by a tilde character. To add a new magazine including a reject list, for example 1 above you would put<br />
+Edge ~ Pacific, Living<br />
+into the box marked "Magazine Title" on the top right of the page, and hit the "+ Magazine" button.</p>
+<h3 id="search-expression">Search Expression<a class="headerlink" href="#search-expression" title="Permanent link">&para;</a></h3>
+<p>In case you want to call the magazine "UK BBC Radio Times" in your database, but only search for "Radio Times"</p>
+<h3 id="date-style">Date Style<a class="headerlink" href="#date-style" title="Permanent link">&para;</a></h3>
+<p>Can be useful for filtering out badly named torrents. You can specify which date components must be in the download filename. Normally just leave this blank and we auto-detect.</p>
+<p>Issue date components are
+M - must contain a month name or number
+D - must contain a day number
+MM - must contain two month names (bi-monthly issues)
+V - must contain a volume number - use I and V if you need both
+I - must contain issue number
+Y - must contain a year</p>
+<h3 id="import-and-export-filter-buttons">Import and Export filter buttons<a class="headerlink" href="#import-and-export-filter-buttons" title="Permanent link">&para;</a></h3>
+<p>To save and load your magazine filter settings if you need to rebuild your database or move to another machine.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../config_categories/" title="Categories" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Categories
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../api/" title="API" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                API
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
