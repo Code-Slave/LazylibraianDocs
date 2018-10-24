@@ -1,3 +1,5 @@
+#Authors
+
 The table itself should be fairly self explanatory, follows the same layout and description as earlier pages. 
 The menu bar has a lot more buttons though.<br><img src="/assets/screenshots/authors_menu.png" width="700">
 

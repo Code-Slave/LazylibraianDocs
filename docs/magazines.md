@@ -1,3 +1,4 @@
+#Magazines
 <img src="/assets/screenshots/magazine_main.png" width="800">
 
 

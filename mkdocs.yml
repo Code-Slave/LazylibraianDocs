@@ -32,6 +32,7 @@ nav:
     - Categories: config_categories.md
     - Filters: config_filters.md
     - Command Line: config_commandline.md
+    - rTorrent: config_rtorrent.md
   - FAQ: faq.md
   - API: api.md
   - User Accounts: config_users.md
