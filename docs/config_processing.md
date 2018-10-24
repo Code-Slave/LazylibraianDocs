@@ -78,28 +78,66 @@ Same as ebooks but for magazines.
  - Keep a copy of the magazine in the local library
  - Only add magazine, not opf or jpg
 
-##Folders
-
-- Base Destination Folder  
-This is where you store your book library. May be an existing shared Calibre Library.
-- Alternate Import/Export Folder  
-Temporary directory to import new ebooks, one at a time or multiple books if each is in their own subdirectory. LazyLibrarian may delete the directory after importing. Books in this directory should contain embedded metadata, or the directory should contain an .opf file with the same name as the book. Lazylibrarian will try to import the book (and if necessary the author) into the library using the author and title in the metadata. As a last resort LazyLibrarian will try to work out the author and title from the filename by matching it to the naming style in "eBookDestination File", see below.  
-Also used as a directory to write a wishlist into (list of wanted books) or to import a wishlist from.
-Wishlists are csv files containing author and book_title, optionally isbn or bookID, other fields ignored.
-
-###Name Formatting
+##Name Formatting
+```
+Note: Calibre may override ebook folder and filename patterns
+```
 
 - Series Pattern
+    - Options: $SerName, $FmtName, $SerNum, $FmtNum, $PadNum, $PubYear, $SerYear, $$, any string.
+
 - Series Name Pattern
+    - Options: $SerName, $PubYear, $SerYear, $$, any string.
+
 - Series Number Pattern
+    - Options: $SerNum, $PadNum, $PubYear, $SerYear, $$, any string.
+
 Allows a flexible display of series details in book filenames or foldernames eg (Lord of the Rings Book #1)
 
 - eBook/AudioBook Foldername Pattern  
 Naming style when creating new subdirectories in the book library (a.k.a. the base destination folder)
+
+    - Options: $Author, $Title, $Series, $SerName, $SerNum, $FmtName, $FmtNum, $PadNum, $PubYear, $SerYear, $Abridged, $$, any string.
+    - Current limitation: Each title has to be in unique subfolder
+
 - eBook Filename Pattern  
 Naming style for new books in the above folder
+
+    - Options: $Author, $Title, $Series, $SerName, $SerNum, $FmtName, $FmtNum, $PadNum, $PubYear, $SerYear, $Abridged, $$, any string.
+    - Current limitation: Each title has to be in unique subfolder
+
 - AudioBook Filename Pattern
 Naming style for audiobooks as they may be in multiple chapters or parts  
+
+    - Options: $Author, $Title, $Series, $SerName, $SerNum, $FmtName, $FmtNum, $PadNum, $PubYear, $SerYear, $Abridged, $Part, $Total, $$, any string.
+    - Current limitation: Has to include $Title and $Part
+
+- Keep Original Files  
+If ticked, books found by the downloaders or placed in the Alternate Import Folder will be
+_copied_ into the library. If NOT ticked they will be _moved_ into the library, ie the original
+downloaded versions will be deleted. 
+- Only import one book format  
+If ticked, and an nzb or torrent contains multiple formats of a book, only import one format. LazyLibrarian will import the first matching format from the ebook format list. If unticked, import all formats found in the list.
+eg if a download contains the same book as mobi,epub,azw3  and your ebook format list is  epub,mobi  
+with the option ticked you will import epub (first match in the ebook format list)  
+with the option unticked you will import mobi,epub but not azw3 as that's not in the ebook format list
+
+- Magazine Foldername Pattern
+Naming style when creating new subdirectories in the magazine library (a.k.a. the base destination folder for magzaines)
+
+- Magazines inside book folder
+Leave unticked if the magazine folder is a full path to a directory.
+Tick if the magazine folder is a sub-folder inside the book library.
+Magazine sub-folder names should start with an underscore or a period, or should contain the special file .ll_ignore  so we can identify them as containing magazines rather than books and ignore them on a book scan.
+
+- Delete folder and magazine when last issue removed
+
+- Magazine Filename Pattern
+
+    - Options: $Title, $IssueDate, any string 
+    - Current limitations: Filename must contain IssueDate 
+    - If Filename does not contain Title, Foldername is used as Title
+
 
 **Variables** - not all are available in all fields  
 $Author - author name as stored in the database  
@@ -119,31 +157,20 @@ Example:
 $Series `($SerName$FmtNum)`  and $FmtNum `$$#$PadNum`  will produce `(Lord of the Rings #02)`
 or if the number isn't known `(Lord of the Rings)` as the space and hash are part of the $FmtNum expression which is empty if there is no series number
 
-- Keep Original Files  
-If ticked, books found by the downloaders or placed in the Alternate Import Folder will be
-_copied_ into the library. If NOT ticked they will be _moved_ into the library, ie the original
-downloaded versions will be deleted. 
-- Only import one book format  
-If ticked, and an nzb or torrent contains multiple formats of a book, only import one format. LazyLibrarian will import the first matching format from the ebook format list. If unticked, import all formats found in the list.
-eg if a download contains the same book as mobi,epub,azw3  and your ebook format list is  epub,mobi  
-with the option ticked you will import epub (first match in the ebook format list)  
-with the option unticked you will import mobi,epub but not azw3 as that's not in the ebook format list
-
-- Magazine Destination Folder  
-Naming style for magazine folders, either inside the book library, or in a separate folder 
-
-- Magazine Destination File  
-Naming style for new magazine issues in the above folder  
-  
-- Magazines Inside Book Folder  
-Leave unticked if the magazine folder is a full path to a directory.
-Tick if the magazine folder is a sub-folder inside the book library.
-Magazine sub-folder names should start with an underscore or a period, or should contain the special file .ll_ignore  so we can identify them as containing magazines rather than books and ignore them on a book scan.
 
 - Quick open single issues of magazines
 If only one issue available, open it, otherwise show a page for the magazine title with just the one issue
 
-## Miscellaneous
+##Folders
+
+- Base Destination Folder  
+This is where you store your book library. May be an existing shared Calibre Library.
+- Alternate Import/Export Folder  
+Temporary directory to import new ebooks, one at a time or multiple books if each is in their own subdirectory. LazyLibrarian may delete the directory after importing. Books in this directory should contain embedded metadata, or the directory should contain an .opf file with the same name as the book. Lazylibrarian will try to import the book (and if necessary the author) into the library using the author and title in the metadata. As a last resort LazyLibrarian will try to work out the author and title from the filename by matching it to the naming style in "eBookDestination File", see below.  
+Also used as a directory to write a wishlist into (list of wanted books) or to import a wishlist from.
+Wishlists are csv files containing author and book_title, optionally isbn or bookID, other fields ignored.
+
+##Miscellaneous
 
 - Cache Expire After  
 Author and book details from googlebooks and goodreads are cached to reduce calls to their servers.
