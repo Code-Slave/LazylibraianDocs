@@ -1,3 +1,6 @@
+#Filters
+<img src="/assets/screenshots/config_filters.png" width="800">
+
 ## Book Reject List
 Comma separated list of words to reject:
 Search results with any of these words in the title will be ignored
@@ -11,8 +14,14 @@ as above
 Results with any of these extensions anywhere in the contents will be rejected. Useful to stop badly named video files being grabbed when you want the book. We scan the list of files in the torrent
 (only transmission/deluge/qbittorrent) and reject the whole download if it contains a file with a matching extension. Can't do this for usenet, as there doesn't seem to be a nzb contents list?
 
-## Size Limits
+## eBook Size Limits
 You can restrict downloads by minimum/maximum size (where available). Ebooks are generally way smaller than audiobooks, which helps limit grabbing the wrong type.
+
+## AudioBook Size Limits
+You can restrict downloads by minimum/maximum size (where available). AudioBooks are generally way bigger than eBooks, which helps limit grabbing the wrong type.
+
+## Magazine Size Limits
+You can restrict downloads by minimum/maximum size (where available). 
 
 ## Magazine Reject Lists (per title)
 ### Reject Words
@@ -49,5 +58,9 @@ V - must contain a volume number - use I and V if you need both
 I - must contain issue number
 Y - must contain a year
 
-### Import and Export filter buttons
+## Import and Export filter buttons
+
+<img src="/assets/screenshots/config_filters_settings.png" width="400">
+
 To save and load your magazine filter settings if you need to rebuild your database or move to another machine.
+

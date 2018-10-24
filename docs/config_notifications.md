@@ -1,6 +1,10 @@
+#Notifications
+<img src="/assets/screenshots/config_notifications.png" width="800">
+
 For all the notifiers, Notify on Snatch sends a message whenever a book/magazine is sent to one of the
 downloaders. Notify on Download sends a message when a snatched book/magazine has been successfully
 downloaded and added to the library. Some notifiers have the ability to send a test message to check the notifications work. For notifiers that can send to multiple devices, the test message will return a list of valid device IDs.
+
 ##Enable Twitter Notifications
 * Notify on Snatch
 * Notify on Download
