@@ -17,6 +17,7 @@ nav:
     - Series Detail: series_detail.md
     - AudioBooks: audiobooks.md
     - Magazines: magazines.md
+    - Magazine Detail: magazine_detail.md
     - Manage: manage.md
     - History: history.md
     - Logs: logs.md
@@ -30,6 +31,7 @@ nav:
     - Notifications: config_notifications.md
     - Categories: config_categories.md
     - Filters: config_filters.md
+    - Command Line: config_commandline.md
   - FAQ: faq.md
   - API: api.md
   - User Accounts: config_users.md

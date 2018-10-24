@@ -1,3 +1,6 @@
+#User Accounts
+<img src="/assets/screenshots/config_useraccounts.png" width="800">
+
 **Bookstrap interface only.**  
 If you enable user accounts in config you can have multiple different users with limited access to lazylibrarian. When you first enable user accounts, your existing WebServer User and WebServer Password are used as the admin account. If you do not currently require webserver login, a default account will be set up with user and password "admin". The WebServer entries can be removed from config once user accounts are active. 
 
@@ -18,6 +21,7 @@ Logins are session based using a browser cookie.
 A Logout button is on every page, or close your browser to log out.
 
 Custom permissions are a bitmask, used as follows...
+
 * 1    Admin, access to config page
 * 2    access to logs
 * 4    access to history
@@ -35,6 +39,8 @@ Custom permissions are a bitmask, used as follows...
 Default admin setting is everything enabled  
 Default guest setting is ebooks/audiobooks/magazines/series/download  
 Default friend is guest plus search/change_status
+
+Send to kindle email - This allows you to send mobi files directly to your kindle email setup on amazon. This can be used for any reader that can recieve files via email.
 
 Each user has their own "sync to calibre" lists where their bookmarks can be synced. Only admin can set these up as the column names need to be unique so one user cannot overwrite anothers bookmarks.
 
