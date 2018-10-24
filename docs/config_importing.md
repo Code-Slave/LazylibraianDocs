@@ -3,15 +3,17 @@
 
 
 ## Information Sources
-Currently only supports GoodReads, GoogleBooks and LibraryThing
+Currently supports GoodReads, GoogleBooks and LibraryThing
 ### GoodReads API
 Access key for GoodReads
 
 ### GoodReads Sync
-LazyLibrarian is supplied with a default goodreads api key which is read-only, and gives access to search functions.    
-If you want to sync your goodreads bookshelves with lazylibrarian you will need to get your own key and secret from [GoodreadsApi](https://www.goodreads.com/api/keys). Once you have your own key/secret enter them in lazylibrarian config and save the config. You can then obtain your goodreads oAuth token/secret to get write access to your goodreads account.  
-You can select whether a book is allowed to be on both shelves. If using the default goodreads to-read/read shelves goodreads will override this and only allow the book on one shelf (you've either read it or you haven't) If using your own shelves they can be used as owned/read instead if you wish, so a book can be on both shelves.  
-Press "Request oAuth1". A new goodreads window will open where you can confirm you want to give access to lazylibrarian. Once confirmed, press "Request oAuth2" to read and store the credentials in lazylibrarian config.  
+LazyLibrarian is supplied with a default goodreads api key which is read-only, and gives access to search functions. If you want to sync your goodreads bookshelves with lazylibrarian you will need to get your own key and secret from [GoodreadsApi](https://www.goodreads.com/api/keys). Once you have your own key/secret enter them in lazylibrarian config and save the config. You can then obtain your goodreads oAuth token/secret to get write access to your goodreads account.
+
+You can select whether a book is allowed to be on both shelves. If using the default goodreads to-read/read shelves goodreads will override this and only allow the book on one shelf (you've either read it or you haven't) If using your own shelves they can be used as owned/read instead if you wish, so a book can be on both shelves.
+
+Press "Request oAuth1". A new goodreads window will open where you can confirm you want to give access to lazylibrarian. Once confirmed, press "Request oAuth2" to read and store the credentials in lazylibrarian config.
+
 You can now configure the bookshelves to use. You can use existing goodreads shelves or lazylibrarian can create new ones. Lazylibrarian supports two shelves, one for books you want, and another for books you have. You can also define how often the sync should occur.  The "Test Authorisation" button will check your credentials are entered correctly.
 
 ### GoogleBooks API
@@ -84,8 +86,6 @@ Alternatively you can supply a pre-built list of monthnames. Useful if you want 
 Note that each language is listed twice, once with full month name and again with the "short" name, and all month names are lower-case and un-accented 
 
 ## Date Formats
-* Format for Added Columns  
-Dates when we added a book/magazine to the library
-* Format for Issue Date  
-How to display magazine issue dates    
-Dates are stored internally in a format useful for sorting, but for display you might want to show something more readable. 
+
+- ***Added Dates -*** Format for Added Columns Dates when we added a book/magazine to the library
+- ***Issue Dates -*** Format for Issue Date How to display magazine issue dates. Dates are stored internally in a format useful for sorting, but for display you might want to show something more readable. 
