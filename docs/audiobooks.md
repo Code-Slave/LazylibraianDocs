@@ -1,3 +1,4 @@
+#AudioBooks
 
 This is the same as the eBooks page, with the same options
 
@@ -13,7 +14,7 @@ The menu bar has four buttons <img src="/assets/screenshots/audiobooks_menu.png"
 * **[Recent AudioBooks]** shows a "wall" of cover images from the books in your library, most recently added first. Clicking on a cover image in the wall will open the first part of the audiobook.
 * **[RSS]** RSS feed of recent downloads.
 
-To the right of the buttons you might see a language selector <img src="/assets/screenshots/lanuguage.png" width="100"> This only appears if there are results in more than one language. Note that this is goodreads/googlebooks idea of the books language, not the actual language of any audio files.
+To the right of the buttons you might see a language selector <img src="/assets/screenshots/language.png" width="100"> This only appears if there are results in more than one language. Note that this is goodreads/googlebooks idea of the books language, not the actual language of any audio files.
 
 Below this on the left is <img src="/assets/screenshots/status.png" width="200"> to change the status of audiobooks.
 
