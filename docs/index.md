@@ -4,6 +4,12 @@
 
 LazyLibrarian is a program to follow authors and grab metadata for all your digital reading needs.
 
+## Information
+The current source repo is [https://github.com/DobyTang/LazyLibrarian](https://github.com/DobyTang/LazyLibrarian)
+Releases are at [https://github.com/DobyTang/LazyLibrarian/releases](https://github.com/DobyTang/LazyLibrarian/releases)
+Bug reports at [https://github.com/DobyTang/LazyLibrarian/issues](https://github.com/DobyTang/LazyLibrarian/issues)
+And finally Reddit [https://www.reddit.com/r/LazyLibrarian/](https://www.reddit.com/r/LazyLibrarian/)
+
 It uses a combination of [Goodreads](https://www.goodreads.com/) [Librarything](https://www.librarything.com/) and optionally [GoogleBooks](https://www.googleapis.com/books/v1/) as sources for author info and book info. License: GNU GPL v3
 
 Right now it's capable of the following:
