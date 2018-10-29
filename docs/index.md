@@ -12,6 +12,8 @@ And finally Reddit [https://www.reddit.com/r/LazyLibrarian/](https://www.reddit.
 
 It uses a combination of [Goodreads](https://www.goodreads.com/) [Librarything](https://www.librarything.com/) and optionally [GoogleBooks](https://www.googleapis.com/books/v1/) as sources for author info and book info. License: GNU GPL v3
 
+## Capabilities
+
 Right now it's capable of the following:
 
 * Import an existing calibre library (optional)
@@ -32,7 +34,7 @@ Right now it's capable of the following:
   * synology_downloadstation
 * When processing the downloaded books it will save a cover picture (if available) and save all metadata into metadata.opf next to the bookfile (calibre compatible format)
 * The new theme for the site allows it to be accessed (and usable) from devices with a smaller screen (such as an iPad)
-* AutoAdd feature for book management tools like Calibre which must have books in flattened directory structure, or use calibre to import your books into an existing calibre library
+* AutoAdd feature for book management tools like Calibre which must have books in flattened directory structure, or use calibredb to import your books into an existing calibre library
 * LazyLibrarian can also be used to search for and download magazines, and monitor for new issues
 * Offers opds interface for ebook clients to browse and download books.
 

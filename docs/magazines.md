@@ -10,7 +10,7 @@ The menu bar has six buttons <img src="/assets/screenshots/magazine_menu.png" wi
 * **[LibraryScan]** will search your library and add all the magazines it can find into your lazylibrarian database, creating cover images where possible.
 * **[Past Issues]** shows a table of magazine issues that were not selected for download, so you can manually add them. The Past Issues table is recreated each time magazinescan is run.
 * **[Recent Issues]** shows a "wall" of cover images from the magazines in your library, most recently added first. Clicking on a cover image in the wall will open the magazine.
-* **[RSS]**
+* **[RSS]** RSS feed of recent downloads.
 
 To the right of the buttons is a magazine selector <img src="/assets/screenshots/magazine_search.png" width="150"> This is used to search and add new magazine titles. 
 

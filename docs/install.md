@@ -9,7 +9,6 @@ Linux / Mac OS X:
 * Run "python LazyLibrarian.py -d" to start in daemon mode
 * Fill in all the config (see [ Wiki](https://github.com/DobyTang/LazyLibrarian/wiki/) for full configuration)
 
-* Start in daemon mode with `python LazyLibrarian.py -daemon`
 
 ## Documentation:
 * [Wiki](https://github.com/DobyTang/LazyLibrarian/wiki/)   
